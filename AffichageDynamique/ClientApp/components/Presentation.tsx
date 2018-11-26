@@ -13,7 +13,7 @@ export class Presentation extends React.Component<RouteComponentProps<{}>> {
                     <span className='glyphicon glyphicon-home'></span> Accueil
                 </a>
                 <video id="bgvid" loop autoPlay>
-                    <source src="./dist/assets/videos/prezbp.mp4" type="video/mp4" />
+                    <source src="./dist/assets/bp/videos/prezbp.mp4" type="video/mp4" />
                 </video>
             </div>
         );
