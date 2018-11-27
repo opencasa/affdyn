@@ -21,13 +21,23 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\components\AccueilStarteo.tsx" />
     <None Remove="ClientApp\components\EditEntreprises.tsx" />
+    <None Remove="ClientApp\components\EvenementsStarteo.tsx" />
+    <None Remove="ClientApp\components\PartenairesStarteo.tsx" />
+    <None Remove="ClientApp\components\PresentationStarteo.tsx" />
     <None Remove="ClientApp\components\RechercheEntreprises.tsx" />
+    <None Remove="ClientApp\components\RechercheEntreprisesStarteo.tsx" />
   </ItemGroup>
 
   <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\components\AccueilStarteo.tsx" />
     <TypeScriptCompile Include="ClientApp\components\EditEntreprises.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\EvenementsStarteo.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\PartenairesStarteo.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\PresentationStarteo.tsx" />
     <TypeScriptCompile Include="ClientApp\components\RechercheEntreprises.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\RechercheEntreprisesStarteo.tsx" />
   </ItemGroup>
 
   <Target Name="DebugRunWebpack" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('wwwroot\dist') ">

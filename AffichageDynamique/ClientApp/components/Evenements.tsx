@@ -14,7 +14,7 @@ export class Evenements extends React.Component<RouteComponentProps<{}>> {
                 </a>
 
                 <video id="avid" loop autoPlay>
-                    <source src="./dist/assets/videos/evenements.mp4" type="video/mp4" />
+                    <source src="./dist/assets/bp/videos/evenements.mp4" type="video/mp4" />
                 </video>   
             </div>
         );

@@ -14,7 +14,7 @@ export class Partenaires extends React.Component<RouteComponentProps<{}>> {
                 </a>
 
                 <video id="bgvid" loop autoPlay>
-                    <source src="./dist/assets/videos/partenaires.mp4" type="video/mp4" />
+                    <source src="./dist/assets/bp/videos/partenaires.mp4" type="video/mp4" />
                 </video>
             </div>
         );

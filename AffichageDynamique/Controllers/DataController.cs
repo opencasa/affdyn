@@ -62,7 +62,7 @@ namespace AffichageDynamique.Controllers
             return listOrganisation;
         }
         [HttpGet("[action]")]
-        public OrganisationsPaginated RechercheOrganisation(string terme)
+        public OrganisationsPaginated RechercheOrganisation(string terme, int etat)
         {
             
 
@@ -78,6 +78,7 @@ namespace AffichageDynamique.Controllers
                 cmd.CommandType = CommandType.StoredProcedure;
 
                 cmd.Parameters.Add("@terme", SqlDbType.NVarChar).Value = terme.ToString();
+                cmd.Parameters.Add("@etat", SqlDbType.Int).Value = etat;
 
                 SqlDataReader reader = null;
                 reader = cmd.ExecuteReader();
@@ -112,7 +113,7 @@ namespace AffichageDynamique.Controllers
             }
         }
         [HttpGet("[action]")]
-        public OrganisationsPaginated GetOrganisations()
+        public OrganisationsPaginated GetOrganisations(int etat)
         {
             string connStr = _config.GetSection("ConnectionStrings").GetSection("Connection").Value;
 
@@ -124,6 +125,7 @@ namespace AffichageDynamique.Controllers
                 conn.Open();
                 cmd = new SqlCommand("getOrganisations", conn);
                 cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add("@etat", SqlDbType.Int).Value = etat;
 
                 SqlDataReader reader = null;
 

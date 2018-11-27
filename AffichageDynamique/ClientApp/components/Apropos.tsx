@@ -14,7 +14,7 @@ export class Apropos extends React.Component<RouteComponentProps<{}>> {
                 </a>
 
                 <video id="bgvid" autoPlay>
-                    <source src="./dist/assets/videos/ge.mp4" type="video/mp4" />
+                    <source src="./dist/assets/bp/videos/ge.mp4" type="video/mp4" />
                 </video>
             </div>
         );
